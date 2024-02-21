@@ -11,8 +11,8 @@ if __name__ == "__main__":
     while True:
         if time.time() % 1800 == 0:
             client.create_notification(
-            title="Water Reminder!",
+            title="Water Reminder",
             subtitle="Take a sip now!",
-            icon=os.environ["CAMINHO_IMAGEM"],
+            icon=os.environ["IMAGE_PATH"],
             action_button_str="Drink",
 )
