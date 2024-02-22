@@ -1,11 +1,10 @@
 import time
-import os
 
 from mac_notifications import client
 
 
 if __name__ == "__main__":
-    image_path=''
+    image_path='/Users/glemoss/Workspace/python/water-reminder/assets/logo.png'
     seconds = 1800
 
     while True:
@@ -13,6 +12,6 @@ if __name__ == "__main__":
             client.create_notification(
             title="Water Reminder",
             subtitle="Take a sip now!",
-            icon=os.environ[image_path],
+            icon=image_path,
             action_button_str="Drink",
 )
